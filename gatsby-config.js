@@ -1,10 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: `Szymon Nowicki personal website`,
-    author: {
-      name: `Szymon Nowicki`,
-      summary: `full stack frontend developer who likes doing things.`,
-    },
     description: `Public side notes and hacking journeys (and some rants) by Szymon Nowicki.`,
     siteUrl: `https://nowicki.io`,
     social: {
@@ -70,4 +66,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

@@ -1,8 +1,8 @@
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   // Define a template for blog post
-  const blogPost = require.resolve(`./src/templates/blog-post.js`)
+  const blogPost = require.resolve(`./src/templates/blog-post.js`);
 
   return graphql(`
     {
@@ -21,7 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-      return Promise.reject(result.errors)
+      return Promise.reject(result.errors);
     }
 
     return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -32,7 +32,7 @@ exports.createPages = ({ actions, graphql }) => {
           // additional data can be passed via context
           slug: node.frontmatter.slug,
         },
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};

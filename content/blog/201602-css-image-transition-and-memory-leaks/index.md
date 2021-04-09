@@ -17,9 +17,7 @@ One of the "things" is the magic _translate3d(0,0,0)_ hack which forced the brow
 
 It is also possible to make everything completely wrong if we don't know what is really happening under the hood (or how specific engine handle specific transitions).
 
-
 ## IMG causes memory leak
-
 
 For a regular job I work with **webviews**. We are focused o creating cool e-commerce apps for merchants around the world. Recently we experiment with single view approach hybrid apps. Results are pretty good, we noticed huge speed improvement, however developing an app in single view approach also opened our eyes on things we didn't consider before.
 
@@ -31,10 +29,8 @@ After some tests we found out that app takes far too much memory after some time
 
 The reason behind this was jpeg rendering layers which were never flushed.
 
-**It seems like in iOS 9, when _opacity_ is applied directly to an image, another GPU layer is created to handle transitions, which is also never released. Even if the image is removed from DOM.**
+**It seems like in iOS 9, when *opacity* is applied directly to an image, another GPU layer is created to handle transitions, which is also never released. Even if the image is removed from DOM.**
 
 Fix for this issue is pretty simple (apply opacity transitions to image parent, not image itself), however research on this took some hours.
 
 Lesson learned. Do not apply opacity to an image itself.
-
-

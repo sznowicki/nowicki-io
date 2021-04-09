@@ -9,9 +9,8 @@ tags: [css, html, js]
 
 Whoa! Long post title for a long story about:
 
-* how to get a container height of_ exact n line-heights (tldr; use display:grid with grid-template-rows)_
-* how to make use of it by creating a cool **dynamic paragraph placeholder** with quite elegant CSS an HTML
-
+- how to get a container height of* exact n line-heights (tldr; use display:grid with grid-template-rows)*
+- how to make use of it by creating a cool **dynamic paragraph placeholder** with quite elegant CSS an HTML
 
 ## How did this start?
 
@@ -43,23 +42,23 @@ There are two simple ways of sizing the container which yet doesn't have the rea
 
 By rendering a dummy, transparent content you have **100% guarantee** that the browser would render it in the same way as it would be a real content.
 
-A problem with that approach is that the content might be accessed by the screen readers _(aria-hidden_ is the solution)_._ But, additionally, you need to build the HTML and render it, then destroy this DOM node and create a new one when the real content is there. Not the biggest performance issue, but also not something you really want to do.
+A problem with that approach is that the content might be accessed by the screen readers *(aria-hidden* is the solution)*.* But, additionally, you need to build the HTML and render it, then destroy this DOM node and create a new one when the real content is there. Not the biggest performance issue, but also not something you really want to do.
 
 #### Leave the container empty, render the same size as before pseudo-element
 
-You can also leave the container empty and render exact same and empty container as a  _before_ pseudo-element.
+You can also leave the container empty and render exact same and empty container as a  *before* pseudo-element.
 
-First intuitive thought would be to use some relative units like _em, _or _ex_.
+First intuitive thought would be to use some relative units like *em, _or _ex*.
 
 This approach won't work since there is no such unit in CSS. All the relative units are either related to:
 
-* container (%)
-* viewport _(vh, vw)_
-* or font (_em, rem, ex, ch..._)
+- container (%)
+- viewport _(vh, vw)_
+- or font (_em, rem, ex, ch..._)
 
-**There is no unit that would strictly relate to line-height**, like _1lh, or _1cap_._
+**There is no unit that would strictly relate to line-height**, like *1lh, or _1cap*.\_
 
-But there is a trick that covers this particular case: **grid ****fraction.**
+But there is a trick that covers this particular case: **grid \*\***fraction.\*\*
 
 #### 1 row fraction happens to have a default height same a line-height
 
@@ -69,30 +68,31 @@ So, usual HTML grid definition looks like this:
 
 ```html
 <style>
-    .grid {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-    }
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
 </style>
 <div class="grid">
-    <div class="row"></div>
-    <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
 </div>
 ```
 
 To prepare an empty container that has the same size as it would contain three lines of text the HTML looks like this:
+
 ```html
 <style>
-    .content.content--placeholder:before {
-        content: "\a0";
-        display: grid;
-        grid-template-rows: repeat(var(--expected-lines), 1fr);
-    }
+  .content.content--placeholder:before {
+    content: '\a0';
+    display: grid;
+    grid-template-rows: repeat(var(--expected-lines), 1fr);
+  }
 </style>
 <div class="content content--placeholder" style="--expected-lines: 3"></div>
 ```
 
-The browser renders an empty container, with a _:before_ pseudo-element. The pseudo-element renders one line of text, a non breaking space which is invisible (**both for visual and screen readers**) but makes the line actually render.
+The browser renders an empty container, with a *:before* pseudo-element. The pseudo-element renders one line of text, a non breaking space which is invisible (**both for visual and screen readers**) but makes the line actually render.
 
 Additionally, the content is a grid with a number of rows which is passed as a CSS variable given from the HTML style attribute.
 
@@ -104,23 +104,32 @@ Rendering a placeholder in CSS at this point is just a pure entertainment. By ha
 
 ```html
 <style>
-    .content.content--placeholder {
-        content: "\a0";
-        display: grid;
-        grid-template-rows: repeat(var(--expected-lines), 1fr);
-        background: linear-gradient(to bottom, rgba(197,197,197,0) 0%,rgba(197,197,197,0) 18%,rgba(197,197,197,0) 19%,rgba(197,197,197,0.5) 20%,rgba(197,197,197,0.5) 50%,rgba(197,197,197,0.5) 80%,rgba(197,197,197,0.5) 81%,rgba(197,197,197,0) 82%,rgba(197,197,197,0) 100%) repeat;
-        background-size: 100% calc(100% / var(--expected-lines))
-    }
+  .content.content--placeholder {
+    content: '\a0';
+    display: grid;
+    grid-template-rows: repeat(var(--expected-lines), 1fr);
+    background: linear-gradient(
+        to bottom,
+        rgba(197, 197, 197, 0) 0%,
+        rgba(197, 197, 197, 0) 18%,
+        rgba(197, 197, 197, 0) 19%,
+        rgba(197, 197, 197, 0.5) 20%,
+        rgba(197, 197, 197, 0.5) 50%,
+        rgba(197, 197, 197, 0.5) 80%,
+        rgba(197, 197, 197, 0.5) 81%,
+        rgba(197, 197, 197, 0) 82%,
+        rgba(197, 197, 197, 0) 100%
+      ) repeat;
+    background-size: 100% calc(100% / var(--expected-lines));
+  }
 </style>
 <div class="content content--placeholder" style="--expected-lines: 3"></div>
 ```
 
-
 The background is a linear gradient created with [ColorZilla](http://www.colorzilla.com/gradient-editor/) generator. The size of the background is 100% wide and height is a result of dividing 100% by the number of lines we want to render.
-
 
 ## Result
 
-Now, the only job for javascript is to define how many lines the placeholder should show by manipulating the _CSS variable_. Then, when the content is ready to be shown, to render the content and remove the class which triggers the _:before_ element.
+Now, the only job for javascript is to define how many lines the placeholder should show by manipulating the *CSS variable*. Then, when the content is ready to be shown, to render the content and remove the class which triggers the *:before* element.
 
 You can find a working demo on the [GitHub page](https://sznowicki.github.io/dynamic-placeholder-example/) ([source code](https://github.com/sznowicki/dynamic-placeholder-example)).

@@ -1,13 +1,13 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from '../components/bio';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -34,10 +34,10 @@ const BlogPostTemplate = ({ data, location }) => {
         </footer>
       </article>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -45,16 +45,15 @@ export const pageQuery = graphql`
       siteMetadata {
         title
       }
-    },
-    markdownRemark(frontmatter: { slug: { eq: $slug }}) {
+    }
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        slug,
-      },
+        slug
+      }
     }
-   
   }
-`
+`;
