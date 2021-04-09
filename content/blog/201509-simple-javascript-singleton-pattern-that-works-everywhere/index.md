@@ -2,9 +2,7 @@
 date: 2015-09-22 20:19:37+00:00
 title: Simple javascript singleton pattern that works everywhere
 slug: simple-javascript-singleton-pattern-that-works-everywhere
-excerpt: How to make a real Singleton object prototype in javascript and make it really
-unique. What is object prototype and how the hell primitive object use extended
-properties.
+excerpt: How to make a real Singleton object prototype in javascript and make it really unique. What is object prototype and how the hell primitive object use extended properties.
 categories: [Development]
 tags: [javascript, singleton, software patterns]
 ---
