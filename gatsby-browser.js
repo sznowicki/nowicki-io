@@ -1,3 +1,6 @@
+import '@fontsource/raleway';
+import '@fontsource/vollkorn';
+import '@fontsource/vollkorn-sc';
 // normalize CSS across browsers
 import './src/style.scss';
 

@@ -9,20 +9,11 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-      </Layout>
-    );
-  }
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      <ol style={{ listStyle: `none` }}>
+      <ol className="posts-list">
         {posts.map(post => {
           const title = post.frontmatter.title;
 

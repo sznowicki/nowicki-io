@@ -1,12 +1,50 @@
+:root {
+  --fonts-default: Raleway, sans-serif;
+  --fonts-headline: Vollkorn, serif;
+  --font-weight-normal: 200;
+  --font-weight-headline: 600;
+}
+
 html {
   font-size: 18px;
-  line-height: 1.5rem;
+  line-height: 1.5em;
+  font-family: var(--fonts-default);
+  font-weight: var(--font-weight-normal);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia,Times,Times New Roman,serif;
+  font-family: var(--fonts-headline);
+  font-weight: var(--font-weight-headline);
+  line-height: 1.2em;
+  margin: 4rem 0 1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 p {
   font-size: 1rem;
+  margin: 1em 0;
+}
+
+.global-wrapper {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+.posts-list {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  li {
+
+  }
 }
