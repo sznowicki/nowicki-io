@@ -1,13 +1,23 @@
 :root {
   --fonts-default: Raleway, sans-serif;
   --fonts-headline: Vollkorn, serif;
-  --font-weight-normal: 200;
+  --fonts-headlines-sc: Vollkorn SC, serif;
+  --font-weight-normal: 500;
   --font-weight-headline: 600;
 
   --color-base: #212121;
   --color-standout: #000;
+  --color-background: #f9f9f9;
+  --color-invert: #fff;
+  --color-invert-background: #000;
+
+  --space-max-text-flow: 65ch;
 }
 
+@mixin underline {
+  text-decoration: underline;
+  text-underline-position: from-font;
+}
 * {
   box-sizing: border-box;
 }
@@ -20,6 +30,7 @@ html, body {
   font-family: var(--fonts-default);
   font-weight: var(--font-weight-normal);
   color: var(--color-base);
+  background: var(--color-background);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,12 +52,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+a {
+  color: #15b9c7;
+  @include underline;
+}
+
 h1 {
   font-size: 4rem;
-  text-decoration: underline;
+  @include underline
 }
 
 h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
   font-size: 2rem;
 }
 
@@ -59,27 +79,33 @@ video {
   max-width: 100%;
 }
 
-.global-wrapper {
-  max-width: 65ch;
+.posts-list, .lead {
+  max-width: var(--space-max-text-flow);
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .posts-list {
   list-style: none;
   display: block;
-  margin: 0;
-  padding: 0;
-
-  li {
-
-  }
 }
 
 .lead {
-  background: #f3f3f3;
   padding: 4rem 1rem;
 
   h1 {
     margin-top: 0;
   }
+}
+
+.header-separator {
+  @include underline;
+  font-family: var(--fonts-headlines-sc);
+  text-align: center;
+  padding: 1em 0;
+  background: var(--color-invert-background);
+  color: var(--color-invert);
+  text-transform: uppercase;
+  text-decoration-line: overline;
+  margin: 1rem 0;
 }

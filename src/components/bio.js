@@ -7,6 +7,7 @@
 
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -24,7 +25,18 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social;
 
   return (
-    <div className="lead">
+    <div className="bio">
+      <StaticImage
+        className="bio-avatar"
+        layout="fixed"
+        formats={['AUTO', 'WEBP', 'AVIF']}
+        src="../images/szymon_nowicki_800.png"
+        width={50}
+        height={50}
+        quality={95}
+        alt="Profile picture"
+      />
+
       <p>
         I’m Szymon, Polish living in Germany since 2015.
       </p>

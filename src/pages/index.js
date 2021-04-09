@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
           </a>
         </p>
       </div>
-      <h2>Recent blog posts</h2>
+      <h2 className="header-separator">Recent blog posts</h2>
       <ol className="posts-list">
         {posts.map(post =>  (
           <li key={post.frontmatter.slug}>
