@@ -7,15 +7,12 @@
 
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
         siteMetadata {
-          title
-          description
           social {
             twitter
           }
@@ -24,29 +21,27 @@ const Bio = () => {
     }
   `);
 
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const title = data.site.siteMetadata?.title;
-  const description = data.site.siteMetadata?.description;
   const social = data.site.siteMetadata?.social;
 
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={['AUTO', 'WEBP', 'AVIF']}
-        src="../images/szymon_nowicki_800.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-
+    <div className="lead">
       <p>
-        {description}
+        I’m Szymon, Polish living in Germany since 2015.
+      </p>
+      <p>
+        My first name translates to Simon, but I prefer <a href="https://pl.forvo.com/word/szymon/#pl" rel="noreferrer, noopener" target="_blank">Polish pronouncing</a>.
+      </p>
+      <p>
+        I’m a software developer, specialized in web technologies. Big fan of React and CSS animations.
+      </p>
+      <p>
+        Outside of the IT world I’m busy with some politics, but you won’t find any political content here on this blog. This blog content is purely technical.
+      </p>
+      <p>
+        If you would like to contact me, you can
         {` `}
         <a href={`https://twitter.com/${social?.twitter || ``}`}>
-          Follow me on Twitter!
+          find me on Twitter!
         </a>
       </p>
     </div>

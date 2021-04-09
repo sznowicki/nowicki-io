@@ -6,7 +6,7 @@ layout: post
 link: https://nowicki.io/how-to-import-a-list-into-apple-reminders/
 slug: how-to-import-a-list-into-apple-reminders
 title: How to import a list into Apple reminders
-wordpress_id: 116
+excerpt: After some update of Apple's Reminders app pasting a list into Reminders stopped creating a list of reminders items. Here's a workaround for that.
 categories: [Hacking]
 tags: [macOS, reminders]
 ---
