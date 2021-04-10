@@ -7,9 +7,10 @@ import Seo from '../components/seo';
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteUrl = data.site.siteMetadata?.siteUrl;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} siteUrl={siteUrl} title={siteTitle}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.excerpt || post.excerpt}
@@ -38,7 +39,8 @@ export const pageQuery = graphql`
   query($slug: String!) {
     site {
       siteMetadata {
-        title
+        title,
+        siteUrl,
       }
     }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {

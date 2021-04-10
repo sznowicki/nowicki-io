@@ -17,6 +17,7 @@
 @mixin underline {
   text-decoration: underline;
   text-underline-position: from-font;
+  margin-bottom: 4rem;
 }
 
 @mixin ghost-link {
@@ -97,12 +98,14 @@ video {
 .posts-list,
 .lead,
 .blog-post,
-.global-header {
+.global-header,
+.footer-content {
   max-width: var(--space-max-text-flow);
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
 }
+
 
 .posts-list {
   list-style: none;
@@ -128,3 +131,18 @@ video {
   text-decoration-line: overline;
   margin: 1rem 0;
 }
+
+footer {
+  margin: 2rem 0 0;
+  padding: 0;
+
+  .footer-content {
+    padding: 4rem 1rem 1rem;
+
+    h2 {
+      margin-top: 0;
+      text-decoration-line: overline;
+    }
+  }
+}
+

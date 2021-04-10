@@ -1,17 +1,18 @@
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 
-import Bio from '../components/bio';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const social = data.site.siteMetadata?.social;
+  const siteUrl = data.site.siteMetadata?.siteUrl;
+
   const posts = data.allMarkdownRemark.nodes;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} siteUrl={siteUrl} title={siteTitle}>
       <Seo title="All posts" />
       <div className="lead">
         <h1>
@@ -76,7 +77,8 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
+        title,
+        siteUrl
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
