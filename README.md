@@ -1,6 +1,6 @@
 # Hello
 
-This is a source code of my personal website/blog. It's built with [Gatsby](https://www.gatsbyjs.com) 
+This is a source code of my [personal website/blog](https://nowicki.io). It's built with [Gatsby](https://www.gatsbyjs.com) 
 and hosted on blazing fast and amazing [Netlify](https://www.netlify.com).
 
 
