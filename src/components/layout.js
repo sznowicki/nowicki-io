@@ -10,9 +10,12 @@ const Layout = ({ location, title, children }) => {
     header = null;
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <nav>
+        <Link className="header-link-home" to="/">
+          go back to home page
+        </Link>
+      </nav>
+
     );
   }
 

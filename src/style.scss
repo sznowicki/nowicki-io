@@ -11,13 +11,25 @@
   --color-invert: #fff;
   --color-invert-background: #000;
 
-  --space-max-text-flow: 65ch;
+  --space-max-text-flow: 70ch;
 }
 
 @mixin underline {
   text-decoration: underline;
   text-underline-position: from-font;
 }
+
+@mixin ghost-link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,8 +37,8 @@
 html, body {
   padding: 0;
   margin: 0;
-  font-size: 18px;
-  line-height: 1.6em;
+  font-size: 20px;
+  line-height: 1.8em;
   font-family: var(--fonts-default);
   font-weight: var(--font-weight-normal);
   color: var(--color-base);
@@ -41,14 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-standout);
 
   a {
-    text-decoration: none;
-    color: inherit;
-
-    &:hover,
-    &:active,
-    &:focus {
-      text-decoration: underline;
-    }
+    @include ghost-link;
   }
 }
 
@@ -79,8 +84,22 @@ video {
   max-width: 100%;
 }
 
-.posts-list, .lead, .blog-post {
+.global-header {
+
+  text-align: right;
+
+  a {
+    @include ghost-link;
+
+  }
+}
+
+.posts-list,
+.lead,
+.blog-post,
+.global-header {
   max-width: var(--space-max-text-flow);
+  width: 100%;
   margin: 0 auto;
   padding: 1rem;
 }
