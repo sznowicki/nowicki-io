@@ -61,6 +61,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-gatsby-cloud`
+    `gatsby-plugin-gatsby-cloud`,
+    'gatsby-plugin-sitemap',
   ],
 };

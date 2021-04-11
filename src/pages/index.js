@@ -19,19 +19,22 @@ const BlogIndex = ({ data, location }) => {
         <h1>
           <Link to="/">Hello</Link>
         </h1>
+        <p>I’m Szymon, Polish living in Germany since 2015.</p>
         <p>
-          I’m Szymon, Polish living in Germany since 2015.
+          My first name translates to Simon, but I prefer{' '}
+          <ExternalLink href="https://pl.forvo.com/word/szymon/#pl">
+            Polish pronouncing
+          </ExternalLink>
+          .
         </p>
         <p>
-          My first name translates to Simon, but I prefer
-          {' '}
-          <ExternalLink href="https://pl.forvo.com/word/szymon/#pl">Polish pronouncing</ExternalLink>.
+          I’m a software developer, specialized in web technologies. Big fan of
+          React and CSS animations.
         </p>
         <p>
-          I’m a software developer, specialized in web technologies. Big fan of React and CSS animations.
-        </p>
-        <p>
-          Outside of the IT world I’m busy with some politics, but you won’t find any political content here on this blog. This blog content is purely technical.
+          Outside of the IT world I’m busy with some politics, but you won’t
+          find any political content here on this blog. This blog content is
+          purely technical.
         </p>
         <p>
           If you would like to contact me, you can
@@ -43,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
       </div>
       <h2 className="header-separator">Recent blog posts</h2>
       <ol className="posts-list">
-        {posts.map(post =>  (
+        {posts.map(post => (
           <li key={post.frontmatter.slug}>
             <article
               className="post-list-item"
@@ -56,7 +59,6 @@ const BlogIndex = ({ data, location }) => {
                     <span itemProp="headline">{post.frontmatter.title}</span>
                   </Link>
                 </h3>
-
               </header>
               <section>
                 <p
@@ -66,8 +68,10 @@ const BlogIndex = ({ data, location }) => {
                   itemProp="description"
                 />
                 <p>
-                  <time dateTime={post.frontmatter.date}>{post.frontmatter.dateFormatted}</time>,
-                  {' '}
+                  <time dateTime={post.frontmatter.date}>
+                    {post.frontmatter.dateFormatted}
+                  </time>
+                  ,{' '}
                   <Link to={post.frontmatter.slug} itemProp="url">
                     read full article
                   </Link>
@@ -87,7 +91,7 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title,
+        title
         siteUrl
       }
     }
@@ -95,11 +99,11 @@ export const pageQuery = graphql`
       nodes {
         excerpt
         frontmatter {
-          date,
+          date
           dateFormatted: date(formatString: "DD.MM.YYYY")
           excerpt
           title
-          slug,
+          slug
         }
       }
     }

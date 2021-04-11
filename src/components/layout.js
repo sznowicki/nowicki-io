@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { ExternalLink } from './externalLink';
 
-
 const Layout = ({ location, siteUrl, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
@@ -17,12 +16,12 @@ const Layout = ({ location, siteUrl, children }) => {
           go back to home page
         </Link>
       </nav>
-
     );
   }
 
-  const commentIntent = encodeURIComponent(`@sz_nowicki: \n ${siteUrl}${location.pathname ?? ''}`);
-
+  const commentIntent = encodeURIComponent(
+    `@sz_nowicki: \n ${siteUrl}${location.pathname ?? ''}`
+  );
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
@@ -33,28 +32,28 @@ const Layout = ({ location, siteUrl, children }) => {
           <h2>Footnotes</h2>
           <div className="footer-content__text">
             <p>
-              This website source code is open source. You can check it on
-              {' '}
+              This website source code is open source. You can check it on{' '}
               <ExternalLink href="https://github.com/sznowicki/nowicki-io">
                 GitHub
               </ExternalLink>
               .
             </p>
             <p>
-              If you wish to
-              {' '}
+              If you wish to{' '}
               <ExternalLink href="https://twitter.com/sz_nowicki">
                 contact me
               </ExternalLink>
-              , or
-              {' '}
-              <ExternalLink href={`https://twitter.com/intent/tweet?text=${commentIntent}`}>
+              , or{' '}
+              <ExternalLink
+                href={`https://twitter.com/intent/tweet?text=${commentIntent}`}
+              >
                 comment my blog post
-              </ExternalLink>,
-              {' '}
-              feel free to reach me on
-              {' '}
-              <ExternalLink href="https://twitter.com/sz_nowicki">Twitter</ExternalLink>.
+              </ExternalLink>
+              , feel free to reach me on{' '}
+              <ExternalLink href="https://twitter.com/sz_nowicki">
+                Twitter
+              </ExternalLink>
+              .
             </p>
           </div>
         </div>
