@@ -3,6 +3,7 @@ author: sznowicki
 date: 2018-10-16 19:17:33+00:00
 title: Pure CSS dynamic multiline paragraph placeholder
 slug: pure-css-dynamic-multiline-paragraph-placeholder
+excerpt: Hacking CSS to make a perfect no-jumping placeholders.
 categories: [Development, Frontend]
 tags: [css, html, js]
 ---

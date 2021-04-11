@@ -4,6 +4,7 @@ comments: true
 date: 2017-08-09 12:50:34+00:00
 slug: promise-is-not-just-simplified-callbacks-pattern
 title: Promise is not just simplified callbacks pattern
+excerpt: Many forget that _Promise_ is not just a nice way to simplify callbacks it's also a nice way for lazy loading some information and keep it forever.
 categories: [Development]
 tags: [es6, javascript, promise]
 ---

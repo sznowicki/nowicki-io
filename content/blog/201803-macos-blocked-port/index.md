@@ -4,6 +4,7 @@ comments: true
 date: 2018-03-27 19:18:49+00:00
 slug: permanently-blocked-port-on-macos-high-sierra
 title: Permanently blocked port on Macos High Sierra
+excerpt: Webpack and mysteriously blocked port on macOS localhost.
 categories: [Development]
 tags: [localhost, networking, node, nodejs, macos]
 ---

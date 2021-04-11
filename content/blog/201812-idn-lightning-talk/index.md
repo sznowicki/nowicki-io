@@ -3,6 +3,7 @@ author: sznowicki
 date: 2018-12-02 19:50:11+00:00
 title: IDN lightning talk on Smashing Conference at Freiburg
 slug: idn-lightning-talk-on-smashing-conference-at-freiburg
+excerpt: In September I had a pleasure to give a short talk as a Lightning Talks speaker at Smashing Conference in Freiburg. Watch it! Now!
 categories: [Development, Talks]
 tags: [talks]
 ---

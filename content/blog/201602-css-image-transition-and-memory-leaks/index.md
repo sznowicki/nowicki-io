@@ -3,6 +3,7 @@ author: sznowicki
 date: 2016-02-11 12:38:36+00:00
 slug: css-image-transition-and-memory-leaks
 title: CSS image transition and memory leaks
+excerpt: Story about really hard to trace memory leak that happened "sometimes"
 categories: [Development]
 tags: [css, image, memory leaks, spa, single view app, uiwebkit]
 ---

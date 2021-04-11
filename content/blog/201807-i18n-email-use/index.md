@@ -4,6 +4,7 @@ comments: true
 date: 2018-07-13 18:32:09+00:00
 slug: why-you-dont-want-e-mail-in-internationalised-domain
 title: Why you don't want e-mail in internationalised domain
+excerpt: Internationalized Domain Names are hell. Let's dive into that hell and figure out what are the main pain points and why it's can be an issue for you.
 categories: [Development]
 tags: [html validation, IDN, localised domains, localized domains]
 ---

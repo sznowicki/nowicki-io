@@ -3,6 +3,7 @@ author: sznowicki
 date: 2018-07-13 18:57:11+00:00
 slug: how-not-to-be-a-rookie-and-let-your-users-use-their-localised-domains
 title: How not to be a rookie and let your users use their localised domains
+excerpt: How to make sure your app supports people who use emails with localised domain names so QA won't report a bug (and maybe some user would actually use that).
 categories: [Development]
 tags: [IDN, localised domains, localized domains, puny code, punycode]
 ---

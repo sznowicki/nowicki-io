@@ -3,6 +3,7 @@ author: sznowicki
 date: 2020-12-19 09:34:01+00:00
 slug: make-your-roomba-work-on-a-dark-carpet
 title: Make your roomba work on a dark carpet
+excerpt: Blinding my Roomba so it doesn't recognise dark places as cliff edges refusing to jump to it.
 categories: [Hacking]
 tags: [irobot, roomba]
 ---
