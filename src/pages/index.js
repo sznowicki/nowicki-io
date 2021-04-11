@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+import { ExternalLink } from '../components/externalLink';
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -22,7 +23,9 @@ const BlogIndex = ({ data, location }) => {
           I’m Szymon, Polish living in Germany since 2015.
         </p>
         <p>
-          My first name translates to Simon, but I prefer <a href="https://pl.forvo.com/word/szymon/#pl" rel="noreferrer, noopener" target="_blank">Polish pronouncing</a>.
+          My first name translates to Simon, but I prefer
+          {' '}
+          <ExternalLink href="https://pl.forvo.com/word/szymon/#pl">Polish pronouncing</ExternalLink>.
         </p>
         <p>
           I’m a software developer, specialized in web technologies. Big fan of React and CSS animations.

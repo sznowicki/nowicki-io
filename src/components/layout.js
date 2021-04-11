@@ -1,17 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { ExternalLink } from './externalLink';
 
-const ExternalLink = ({ href, children }) => {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener, noreferrer"
-      >
-      {children}
-    </a>
-  )
-}
 
 const Layout = ({ location, siteUrl, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -43,7 +33,12 @@ const Layout = ({ location, siteUrl, children }) => {
           <h2>Footnotes</h2>
           <div className="footer-content__text">
             <p>
-              This website source code is open source. You can check it on <a href="https://github.com/sznowicki/nowicki-io" target="_blank" rel="noreferrer, noopener">GitHub</a>.
+              This website source code is open source. You can check it on
+              {' '}
+              <ExternalLink href="https://github.com/sznowicki/nowicki-io">
+                GitHub
+              </ExternalLink>
+              .
             </p>
             <p>
               If you wish to

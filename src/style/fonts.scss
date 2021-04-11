@@ -1,0 +1,26 @@
+@use "~@fontsource/raleway/scss/mixins" as Raleway;
+@use "~@fontsource/vollkorn/scss/mixins" as Vollkorn;
+@use "~@fontsource/vollkorn-sc/scss/mixins" as VollkornSC;
+
+
+@include Raleway.fontFace(
+        $weight: 500,
+        $fontName: Raleway,
+        $display: block,
+        $fontDir: "~@fontsource/raleway/files"
+);
+
+@include Vollkorn.fontFace(
+        $weight: 600,
+        $fontName: Vollkorn,
+        $display: fallback,
+        $fontDir: "~@fontsource/vollkorn/files"
+);
+
+@include VollkornSC.fontFace(
+        $weight: 600,
+        $fontName: Vollkorn SC,
+        $display: fallback,
+        $fontDir: "~@fontsource/vollkorn-sc/files"
+);
+
