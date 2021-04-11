@@ -56,7 +56,7 @@ const BlogIndex = ({ data, location }) => {
                     <span itemProp="headline">{post.frontmatter.title}</span>
                   </Link>
                 </h3>
-                <time dateTime={post.frontmatter.date}>{post.frontmatter.dateFormatted}</time>
+
               </header>
               <section>
                 <p
@@ -65,6 +65,13 @@ const BlogIndex = ({ data, location }) => {
                   }}
                   itemProp="description"
                 />
+                <p>
+                  <time dateTime={post.frontmatter.date}>{post.frontmatter.dateFormatted}</time>,
+                  {' '}
+                  <Link to={post.frontmatter.slug} itemProp="url">
+                    read full article
+                  </Link>
+                </p>
               </section>
             </article>
           </li>
