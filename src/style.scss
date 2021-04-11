@@ -12,8 +12,21 @@
   --color-background: #f9f9f9;
   --color-invert: #fff;
   --color-invert-background: #000;
+  --color-link: #15b9c7;
 
   --space-max-text-flow: 70ch;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-base: #dadada;
+    --color-standout: #e4e4e4;
+    --color-background: #131313;
+    --color-invert: var(--color-standout);
+    --color-invert-background: #000;
+
+    --space-max-text-flow: 70ch;
+  }
 }
 
 @mixin underline {
@@ -67,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #15b9c7;
+  color: var(--color-link);
   @include underline;
 }
 
