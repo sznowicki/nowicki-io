@@ -26,10 +26,6 @@ const Layout = ({ location, siteUrl, children }) => {
 
   return (
     <>
-      <Helmet>
-        <script async defer data-domain="nowicki.io" src="https://plausible.io/js/plausible.js"></script>
-      </Helmet>
-
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <header className="global-header">{header}</header>
         <main>{children}</main>
