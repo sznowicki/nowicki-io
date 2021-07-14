@@ -58,6 +58,25 @@ const Layout = ({ location, siteUrl, children }) => {
                 .
               </p>
             </div>
+            <h2>One more thing</h2>
+            <div className="footer-content__text">
+              <p>
+                If you're interested in
+                {' '}
+                <a href="https://agentslug.com">monitoring your website uptime</a>
+                {' '}
+                or
+                {' '}
+                <a href="https://agentslug.com">monitoring your application/server</a>
+                {' '}
+                then I recommend a great service, which I run as for many years:
+                {' '}
+                <a href="https://agentslug.com">AgentSlug.com</a>.
+              </p>
+              <p>
+                It has some free tier, and premium trial account. Check this out!
+              </p>
+            </div>
           </div>
         </footer>
       </div>
