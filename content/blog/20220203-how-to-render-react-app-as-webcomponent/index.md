@@ -11,7 +11,7 @@ categories: [Development]
 tags: [react, webcomponents, webdev, frontend]
 ---
 
-# Let's make a web component with React
+## Let's make a web component with React
 
 WebComponents can be very useful, especially if you work in a micro frontends architecture.
 
@@ -26,7 +26,7 @@ Well, sort of, and rather pre React v.17.
 
 ## What is a custom HTMLElement
 
-If you know web components and use them already, you can skip this whole section and go right into [React][#react] part.
+If you know web components and use them already, you can skip this whole section and go right into [React](#react) part.
 
 I will not explain it fully here, for actual definition please check out the [MDN HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) page.
 
