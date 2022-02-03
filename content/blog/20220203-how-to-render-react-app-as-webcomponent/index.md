@@ -43,32 +43,35 @@ And that "thing" can be anything you want.
 
 I usually use those in two cases:
 
-#### Microfrontends
+#### Micro Frontends
 
-Some of the code I write at work runs in a "micro frontend" website. Which means, I get some place on the website,
+Some code I write at work runs within a "micro frontend" website. Which means, I get some place on the website,
 and it's my only responsibility for this part of the website.
 
-My code would talk with the "host" website via some APIs and it would expose some APIs to others, but whatever happens at my place is only up to the code inside.
+My code would talk with the "host" website via some APIs and it would expose some APIs to others, but whatever happens in my place is only up to the code inside.
 
 Imagine a checkout button as a closed shadow DOM web component. 
 
-A team that's responsible of the cart page are specialised in cart page things. They don't know how the checkout works and it's none of their business because there's a checkout team.
+A team that's responsible for the cart page are specialised in cart page things. They don't know how the checkout works
+and it's none of their business because there's a checkout team.
 
-They know when to redirect the user where. Maybe it's a different platform? Maybe an internal checkout page, they know and they want to only provide the Cart team the checkout page.
+They know when to redirect the user where. Maybe it's a different platform? Maybe an internal checkout page, they know
+and they want to only provide the Cart team the checkout button.
 
 In this architecture, the Checkout team can prepare the Cart team a web component that would render a button and contain the logic of what happens when the button is clicked.
 
-Both teams' code can talk with let's say events. It's all nice and clean in terms of responsibilities.
+Both teams' code can talk to each other (e.g. via events). It's all nice and clean in terms of responsibilities.
 
-With closed shadow DOM the Checkout team can even chose to have their own styles (handy if it's a third-party button with different design system).
+With closed shadow DOM the Checkout team can even choose to have their own styles (handy if it's a third-party button with different design system).
 
 For more I highly recommend starting from [micro frontends website](https://micro-frontends.org) which is a gold mine in this topic. 
 
 #### Vanilla HTML website with just some js logic
 
-The other case where I opt into webcomponents is a static website that doesn't use any React, but still needs some JS logic from the components library.
+The other case where I opt into webcomponents is a static website that doesn't use any React,
+but still needs some JS logic from components library.
 
-For example, there's a component on a documentation website that toggles the code samples between languages.
+For example, there's a component on a documentation website that toggles code samples between languages.
 
 The HTML looks like this:
 ```html
@@ -84,10 +87,11 @@ The HTML looks like this:
 </toggle-content>
 ```
 
-For a documentation website we don't want to use React to make it as light as possible. It's quite a log of overhead for a simple logic that can be elegant and nicely written in vanillajs.
+For a documentation website we don't want to use React to make it as light as possible. It's quite a lot of overhead 
+for a simple logic that can be elegant and nicely written in vanilla JS.
 
 In this case, there's a small ToggleContentElement class that when connected to the DOM node would:
-- walk through all `<toggle-content-menu-item>' and wrap the text with `<button>` so we're sure it's accessible
+- walk through all `<toggle-content-menu-item>` and wrap the text with `<button>` so we're sure it's accessible
 - add `click` listeners to them
 - hide the second `<toggle-content-body>` and maybe apply `aria-hidden` attributes
 - toggle the content when button is clicked
@@ -157,16 +161,16 @@ const renderReactAsCustomHTMLElement = (
 
 ## Bundler traps
 
-Now when you have a good way to Render react within a web component you want to start work on your microfrontend, then
-you discover that when you `import 'some-css.css'` with a tool like Parcel, it adds the `<link>` element outside your webcomponent.
+Now when you have a good way to render React within a web component you start your work just to discover that
+when you `import 'some-css.css'` with a tool like Parcel, it adds the `<link>` element outside your web component.
 
-Which, if you're running in *closed shadow* mode, makes all the style not being applied to the DOM nodes you render.
+Which, if you're running it in *closed shadow* mode, makes all the style not being applied to the DOM nodes you render.
 
 For [Parcel](https://parceljs.org/languages/css/) the solution is super easy: just import them as `url` or `bundle-inline` and render like this:
 
 ```jsx
 import cssInline from 'bundle-text:./some-css.css';
-import cssAsHref from 'bundle-text:./some-other.css';
+import cssAsHref from 'url:./some-other.css';
 
 const MyApp = () => (
   <>
@@ -179,17 +183,23 @@ const MyApp = () => (
 
 ## Last comments
 
-I work with this pattern for at least a year. First it was only for that static website that we didn't want to use React.
+I work with web components more than a year. First it was only for that static website that we didn't want to use React.
 
-Then it was more into microfrontends.
+Then it micro frontends came to us because it's a good way for multiple teams to provide their services within a same website.
+Not the most efficient in terms of website performance or bundle size, but very efficient in terms of "we can work on our thing and you don't need to know what we do".
 
-In all cases I enjoyed writing native JS a lot. To the level that I choose to put more and more logic in our Design library into web components.
+Which can be a godsend in big organisations. 
 
-Now more and more React components are merely a wrappers and html builders for web components.
+In all cases I enjoyed writing native JS a lot. To the level that I choose to put more and more logic
+in our Design library to web components.
 
-But it only applies to design components. Stupid components that need some logic but it's only the logic between the component and a user.
+Now more and more React components are merely just wrappers and html builders for web components.
 
-When some app business logic is on a table, fetching some data from servers, maintaining app state, SPA routing, then the combo of React and Redux is still my tool of choice.
+But it only applies to design components. Stupid components that need some logic, but it's only a
+logic between component and a user.
+
+When the's some business logic, fetching some data from servers, maintaining app state,
+SPA routing, then a combo of React and Redux is still my tool of choice.
 
 ## Now make your own custom HTMLElement, it's fun!
 
