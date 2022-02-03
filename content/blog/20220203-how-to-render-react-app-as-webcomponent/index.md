@@ -5,7 +5,7 @@ date: 2022-02-03 20:00:00+00:00
 layout: post
 link: https://nowicki.io/how-to-render-react-app-as-webcomponent/
 slug: how-to-render-react-app-as-webcomponent
-title: How to render a react app as a webcomponent (custom HTMLElement)
+title: How to render a react app as a Web Component
 excerpt: Small pattern that renders a React component as a child of a custom HTMLElement
 categories: [Development]
 tags: [react, webcomponents, webdev, frontend]
