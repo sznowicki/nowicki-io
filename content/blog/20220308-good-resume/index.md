@@ -3,12 +3,12 @@ author: sznowicki
 date: 2022-03-08 19:19:36+00:00
 slug: how-to-write-a-good-resume-for-a-software-developer
 title: How to write a good resume for a software developer
+layout: post
+link: https://nowicki.io/how-to-write-a-good-resume-for-a-software-developer/
 excerpt: Thoughts and experiences I gathered during my first recruitment process where I was the recruiter one.
 categories: [Development]
 tags: [recruitment, hr, resume, cv, hiring]
 ---
-
-# How to write a good resume for a software development position
 
 Recently I happen to take part in the review process of tons of CVs for a position that was requested by my team. This experience was very interesting.
 
