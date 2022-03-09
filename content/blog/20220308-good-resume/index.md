@@ -68,7 +68,7 @@ People (like me) scan those CVs first. They don’t read word by word, especiall
 
 If I see “senior developer” in the title, then I see first experience item “junior CMS specialist”, then my brain goes _wut?_.
 
-I do care what you did in the beginning of your career, but first I need to know what you do know.
+I do care what you did in the beginning of your career, but first I need to know what you do now.
 
 ## Send a cover letter
 When reviewing the resume, reviewer makes some image of you based on what they read, plus all the clichés that person has in their head.
