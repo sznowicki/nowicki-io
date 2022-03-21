@@ -21,7 +21,7 @@ In big companies, it’s unlikely that your application will be initially review
 
 There might be hundreds of applications waiting to be reviewed, and most probably, the first reviewer would be someone from HR with or without technical background or knowledge.
 
-Big companies should also have decent HR teams, so getting through this pre-stage should not be a problem if you make sure your resume consists of all or most of the things that are listed in the job offer.
+Getting through this pre-stage should not be a problem if you make sure your resume consists of all or most of the things that are listed in the job offer.
 
 If you have similar experience, that’s not listed, but technically is really similar, write it, explicitly, or risk rejection.
 
