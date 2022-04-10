@@ -18,7 +18,7 @@
     "@fontsource/raleway": "^4.5.5",
     "@fontsource/vollkorn": "^4.5.6",
     "@fontsource/vollkorn-sc": "^4.5.6",
-    "gatsby": "^4.11.2",
+    "gatsby": "4.7.2",
     "gatsby-plugin-feed": "^4.11.1",
     "gatsby-plugin-gatsby-cloud": "^4.11.1",
     "gatsby-plugin-google-analytics": "^4.11.0",
