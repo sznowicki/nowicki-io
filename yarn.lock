@@ -47,20 +47,20 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@fontsource/raleway@^4.5.5":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.5.tgz#0540aeb025190bdc9bf59669fcffbc95d3b7dc8b"
-  integrity sha512-T2zIJ/6/2x+T9+tLtw/qSiJ68ahcceDMUOU3zrzEyNGYXUvlQyU4Cv9wyTmS+TU9IFHHChjMToV6izRL9mqDqg==
+"@fontsource/raleway@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.11.tgz#6da0bad1f44e0360fe465663ac0683601d29bda7"
+  integrity sha512-WrFuS5q3tPqNci4iDwIf7lnkHY5jrkWswy6B007W//cAB7Iiw2NuxBNxrCetYpe3efPbEoFPcoKeTPqDzoWQ3A==
 
-"@fontsource/vollkorn-sc@^4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-4.5.6.tgz#5dd9d36e486469a6445ba9376f604124d6e86eed"
-  integrity sha512-n2KCaVu+sXBQ4dhKS7EPG85I1U6MENhKkjjinimKT6zQeN/b535d3bu0nibEAoSUt8QAnGolTvNXiwcKDEKP+Q==
+"@fontsource/vollkorn-sc@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-4.5.11.tgz#fe13da2844ea4ba87bb15ce4dad7597e3249a31a"
+  integrity sha512-Xj4lCSxTg5tjzwKVD891zS4jPLegdiOYPEJwqugulCwq3uhm9BKu1xLxDPmKvLTIUf/XpJZoMC2LgGw1MaQrGw==
 
-"@fontsource/vollkorn@^4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-4.5.6.tgz#b1c97b40ff95c45b60cef491881a7066ff07c954"
-  integrity sha512-1IBBJM4Tj2UZ7fzoJEfHBY/oOqkyVzynFbX/Hdl3smDYB7Zw8BwcGBNHIT1alyZi2aI/9ir3cI/mynBSVUJ8Cw==
+"@fontsource/vollkorn@^4.5.12":
+  version "4.5.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-4.5.12.tgz#4e2bb7590ab0fd0b5cfdb323544fa3a56b9013d9"
+  integrity sha512-6JDTj+rjsmhmTnUzval24bbYjpZb2zG/peja5qXCtU7+59vWXD4nynC7+UXpvGo6ybzOKUm7g92NBRLKf6bVFg==
 
 "@jridgewell/gen-mapping@^0.3.0":
   version "0.3.2"
@@ -1346,11 +1346,6 @@ get-port@^4.2.0:
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-4.2.0.tgz#e37368b1e863b7629c43c5a323625f95cf24b119"
   integrity sha512-/b3jarXkH8KJoOMQc3uVGHASwGLPq3gSFJ7tgJm2diza+bydJPTGOibin2steecKeOylE8oY2JERlVWkAJO6yw==
 
-github-slugger@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.4.0.tgz#206eb96cdb22ee56fdc53a28d5a302338463444e"
-  integrity sha512-w0dzqw/nt51xMVmlaV1+JRzN+oCa1KfcgGEWhxUG16wbdA+Xnt/yoFO8Z8x/V82ZcZ0wy6ln9QDup5avbhiDhQ==
-
 glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -1890,11 +1885,6 @@ posthtml@^0.16.4, posthtml@^0.16.5:
     posthtml-parser "^0.11.0"
     posthtml-render "^3.0.0"
 
-prettier@2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
-  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
-
 promise@^7.0.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
@@ -2093,19 +2083,10 @@ safe-buffer@^5.0.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@^1.38.0:
+sass@^1.38.0, sass@^1.55.0:
   version "1.55.0"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.55.0.tgz#0c4d3c293cfe8f8a2e8d3b666e1cf1bff8065d1c"
   integrity sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==
-  dependencies:
-    chokidar ">=3.0.0 <4.0.0"
-    immutable "^4.0.0"
-    source-map-js ">=0.6.2 <2.0.0"
-
-sass@^1.50.0:
-  version "1.50.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.50.0.tgz#3e407e2ebc53b12f1e35ce45efb226ea6063c7c8"
-  integrity sha512-cLsD6MEZ5URXHStxApajEh7gW189kkjn4Rc8DQweMyF+o5HF5nfEz8QYLMlPsTOD88DknatTmBWkOcw5/LnJLQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
