@@ -3,6 +3,16 @@ const Layout = require('./Layout');
 const { ExternalLink } = require('./ExternalLink');
 
 const BlogIndex = ({ pages }) => {
+  const pagesSorted = pages
+    .sort(([metaA], [metaB]) => {
+      const dateA = new Date(metaA.date);
+      const dateB = new Date(metaB.date);
+      if (dateA > dateB) {
+        return -1;
+      }
+      return 1;
+    });
+
   return (
     <Layout isRoot>
       <div className="lead">
@@ -36,7 +46,8 @@ const BlogIndex = ({ pages }) => {
       </div>
       <h2 className="header-separator">Recent blog posts</h2>
       <ol className="posts-list">
-        {pages.map(([meta]) => (
+        {pagesSorted
+          .map(([meta]) => (
           <li key={meta.slug}>
             <article
               className="post-list-item"
