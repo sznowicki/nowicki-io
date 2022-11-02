@@ -32,6 +32,6 @@ I know it works by looking at the emitted light that comes back. First idea that
 
 It worked. Cliff edge sensors "think" my flat's floor is perfectly white now.
 
-![](./IMG_8212.jpg)
+![](./IMG_8212.webp)
 
-![](./IMG_8213.jpg)
+![](./IMG_8213.webp)
