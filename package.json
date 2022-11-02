@@ -10,6 +10,14 @@
     "serve": "http-server public/",
     "dev": "yarn serve & yarn watch"
   },
+  "browserslist": [
+    "> 5%",
+    "last 2 versions and not dead",
+    "not ie > 0",
+    "not op_mob > 0",
+    "not op_mini all",
+    "not kaios > 0"
+  ],
   "dependencies": {
     "@fontsource/raleway": "^4.5.5",
     "@fontsource/vollkorn": "^4.5.6",
