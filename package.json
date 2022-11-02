@@ -4,7 +4,7 @@
   "author": "Szymon Nowicki",
   "scripts": {
     "make:pages": "node -r @swc/register scripts/build.js",
-    "make:frontend": "parcel build app/style.scss --dist-dir dist/assets",
+    "make:frontend": "parcel build app/style.scss --dist-dir public/assets",
     "build": "yarn make:pages && yarn make:frontend",
     "watch": "nodemon --exec 'yarn build' --watch scripts --watch content --watch app -e js,jsx,pug,md,scss",
     "serve": "http-server dist/",
