@@ -1,4 +1,30 @@
-@import './style/fonts';
+@use "npm:@fontsource/raleway/scss/mixins" as Raleway;
+@use "npm:@fontsource/vollkorn/scss/mixins" as Vollkorn;
+@use "npm:@fontsource/vollkorn-sc/scss/mixins" as VollkornSC;
+
+
+@include Raleway.fontFace(
+  $weight: 500,
+  $fontName: Raleway,
+  $display: block,
+  $fontDir: "npm:@fontsource/raleway/files"
+);
+
+@include Vollkorn.fontFace(
+  $weight: 600,
+  $fontName: Vollkorn,
+  $display: fallback,
+  $fontDir: "npm:@fontsource/vollkorn/files"
+);
+
+@include VollkornSC.fontFace(
+  $weight: 600,
+  $fontName: Vollkorn SC,
+  $display: fallback,
+  $fontDir: "npm:@fontsource/vollkorn-sc/files"
+);
+
+
 
 :root {
   --fonts-default: Raleway, sans-serif;
@@ -67,8 +93,6 @@ html, body {
     font-size: 16px;
   }
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--fonts-headline);
@@ -174,3 +198,10 @@ footer {
   }
 }
 
+
+main {
+  img, video {
+    width: 100%;
+    max-width: 100%;
+  }
+}
