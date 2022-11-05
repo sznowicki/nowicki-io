@@ -31,7 +31,7 @@ const Layout = ({ isRoot, children }) => {
                 <ExternalLink href="https://github.com/sznowicki/nowicki-io">
                   GitHub
                 </ExternalLink>
-                 and subscribe with your RSS reader.
+                 {' '}and subscribe with your RSS reader.
               </p>
               <p>
                 If you wish to{' '}
