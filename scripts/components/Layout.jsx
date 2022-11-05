@@ -1,7 +1,7 @@
 const React = require('react');
 const { ExternalLink } = require('./ExternalLink');
 
-const Layout = ({ isRoot, children, slug }) => {
+const Layout = ({ isRoot, children }) => {
   const isRootPath = isRoot
   let header;
 
@@ -17,10 +17,6 @@ const Layout = ({ isRoot, children, slug }) => {
     );
   }
 
-  const commentIntent = encodeURIComponent(
-    `@sz_nowicki: \n https://nowicki.io/${slug ?? ''}`
-  );
-
   return (
     <>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
@@ -35,20 +31,21 @@ const Layout = ({ isRoot, children, slug }) => {
                 <ExternalLink href="https://github.com/sznowicki/nowicki-io">
                   GitHub
                 </ExternalLink>
-                .
+                 and subscribe with your RSS reader.
               </p>
               <p>
                 If you wish to{' '}
-                <ExternalLink href="https://twitter.com/sz_nowicki">
+                <ExternalLink href="https://mastodon.social/@sznowicki">
                   contact me
                 </ExternalLink>
-                , or{' '}
-                <ExternalLink
-                  href={`https://twitter.com/intent/tweet?text=${commentIntent}`}
-                >
-                  comment my blog post
-                </ExternalLink>
+                , or comment my blog post
                 , feel free to reach me on{' '}
+                <ExternalLink href="https://mastodon.social/@sznowicki">
+                  Mastodon
+                </ExternalLink>
+                {' '}
+                or
+                {' '}
                 <ExternalLink href="https://twitter.com/sz_nowicki">
                   Twitter
                 </ExternalLink>
