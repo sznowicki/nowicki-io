@@ -10,6 +10,9 @@ const {
 } = require('path');
 const { convertPage } = require('./markdown/convertPage');
 const { makeDocument } = require('./templater/index');
+const makeRSS = require('./helpers/makeRSS');
+const { webConfig } = require('./helpers/common');
+
 const blogPathname = resolve(__dirname, '../', 'content/blog');
 const blogDirFiles = readdirSync(blogPathname);
 const distFolder = resolve(__dirname, '../public/');
@@ -36,8 +39,8 @@ const makePage = async (filename, [meta, html]) => {
 
 const makeStaticPages = async (pages) => {
   const index = await makeDocument('home', { pages }, {
-    title: 'Szymon Nowicki personal website',
-    excerpt: 'Public side notes and hacking journeys (and some rants) by Szymon Nowicki.',
+    title: webConfig.title,
+    excerpt: webConfig.description,
   });
   writeFileSync(resolve(distFolder, './index.html'), index);
   const page404 = await makeDocument('404', {}, {
@@ -46,6 +49,7 @@ const makeStaticPages = async (pages) => {
   });
   writeFileSync(resolve(distFolder, './404.html'), page404);
 }
+
 
 const main = async () => {
   removeSync(distFolder);
@@ -63,6 +67,7 @@ const main = async () => {
     pages.push(page)
   }
   await makeStaticPages(pages);
+  await makeRSS(pages, distFolder);
 }
 
 main();
