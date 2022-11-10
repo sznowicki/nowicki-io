@@ -6,7 +6,7 @@
     "make:pages": "node -r @swc/register scripts/build.js",
     "make:files": "cp -r static/* public",
     "make:frontend": "parcel build app/style.scss --dist-dir public/assets",
-    "build": "yarn make:pages && yarn make:frontend && make:files",
+    "build": "yarn make:pages && yarn make:frontend && yarn make:files",
     "watch": "nodemon --exec 'yarn build' --watch scripts --watch content --watch app -e js,jsx,pug,md,scss",
     "serve": "http-server public/",
     "dev": "yarn serve & yarn watch"
