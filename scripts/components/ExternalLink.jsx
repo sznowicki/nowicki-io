@@ -1,8 +1,8 @@
 const React = require('react');
 
-const ExternalLink = ({ href, children }) => {
+const ExternalLink = ({ href, rel, children }) => {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target="_blank" rel={ rel ? rel : 'noopener noreferrer'}>
       {children}
     </a>
   );

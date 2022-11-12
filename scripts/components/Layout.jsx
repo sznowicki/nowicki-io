@@ -35,19 +35,13 @@ const Layout = ({ isRoot, children }) => {
               </p>
               <p>
                 If you wish to{' '}
-                <ExternalLink href="https://mastodon.social/@sznowicki">
+                <ExternalLink href="https://social.nowicki.io/@hey" rel="me">
                   contact me
                 </ExternalLink>
                 , or comment my blog post
                 , feel free to reach me on{' '}
-                <ExternalLink href="https://mastodon.social/@sznowicki">
+                <ExternalLink href="https://social.nowicki.io/@hey" rel="me">
                   Mastodon
-                </ExternalLink>
-                {' '}
-                or
-                {' '}
-                <ExternalLink href="https://twitter.com/sz_nowicki">
-                  Twitter
                 </ExternalLink>
                 .
               </p>
