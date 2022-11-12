@@ -10,22 +10,30 @@ categories: [Development]
 tags: [bundler, parcel, markdown, webdev]
 ---
 
-This might sound like yet another "how I moved my blog to X" or "do not use Y", but well, why not?
+This might sound like yet another "how I moved my blog to X", so before you stop reading, here are
+the main thoughts and thesis you find in this article:
+
+1. Frameworks in 2022 don't give much except conventions.
+2. In some cases it's better to write framework-less.
+3.
 
 ## Frameworks
+### What they give
 
-When I started my career in web development I knew little to nothing. It was around 2010,
-so time with wars between Wordpress, Joomla and Drupal. Experience PHP developers would
-pick between Zend, CodeIgniter (my former love) and Symfony.
+When I started my career in web development I knew little to nothing. It was around 2010, time full of flame wars between WordPress, Joomla and Drupal fans.
 
-They offered something that people with less experience would avoid doing on their own:
-MVC patterns (conventions), authentication (security) and performance (best practices).
+Experienced PHP developers would pick between Zend, CodeIgniter (❤️) and Symfony.
 
-With PHP in those days and lack of solid libraries that do one thing and do it well,
-it was quite a big risk to do things different, especially if one weren't very experienced.
+Inexperienced like me, would spin up WordPress on [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack,
+and hack it around with custom fields or plugins to make that [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+interface working so that marketing manager who ordered that is happy.
 
-And back then, everyone felt inexperienced since whole web industry was kinda chaotic and
-young. Compared to 2022.
+All of this because threats were everywhere, how to avoid SQL-injection? How to store passwords?
+
+Back then, those, solved problems now, were vaguely solved with many different opinions circulating around.
+
+Going with any established framework was a safe bet.
+
 
 ## JS frameworks in 2022
 
