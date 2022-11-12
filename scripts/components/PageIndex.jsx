@@ -39,13 +39,9 @@ const BlogIndex = ({ pages }) => {
         <p>
           If you would like to contact me, you can find me on
           {` `}
-          <ExternalLink href="https://mastodon.social/@sznowicki">
+          <ExternalLink rel="me" href="https://social.nowicki.io/@hey">
              Mastodon
           </ExternalLink>
-          {' '} or {' '}
-          <ExternalLink href={`https://twitter.com/sz_nowicki`}>
-            Twitter
-          </ExternalLink>.
         </p>
         <p>This blog supports RSS/Atom/JSON feed</p>
       </div>
