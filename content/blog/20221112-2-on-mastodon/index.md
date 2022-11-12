@@ -1,6 +1,6 @@
 ---
 author: sznowicki
-date: 2022-11-12 14:43:36+00:00
+date: 2022-11-12 18:43:36+00:00
 slug: on-mastodon
 title: On Mastodon
 layout: post
