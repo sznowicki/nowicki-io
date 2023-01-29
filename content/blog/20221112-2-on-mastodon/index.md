@@ -67,7 +67,7 @@ Same if you are privacy, „host your own stuff”, „own your data” person, 
 For personal instances there are some benefits or running the instance, like:
 
 - You have full control over your internet persona.
-- You are verified by definition, @media@brand.com is obvious, @brand@some-mastodon.server is not.
+- You are verified by definition, `@media@brand.com` is obvious, `@brand@some-mastodon.server` is not.
 - You have full control what you post, what you ban, what your social media experience is like.
 
 For accounts with big audience there's one more thing.
