@@ -57,7 +57,7 @@ const Layout = ({ isRoot, children }) => {
                 {' '}
                 <a href="https://agentslug.com">monitoring your application/server</a>
                 {' '}
-                then I recommend a great service, which I run as for many years:
+                then I recommend a great service, which I run as an indie dev for many years:
                 {' '}
                 <a href="https://agentslug.com">AgentSlug.com</a>.
               </p>
