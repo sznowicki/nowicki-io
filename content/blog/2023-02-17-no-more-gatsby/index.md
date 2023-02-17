@@ -12,11 +12,9 @@ tags: [parceljs, parcel, gatsby, react]
 
 ## How this blog works under the hood
 
-This is yet another post about "how I reworked my blog stack", but I find it cool what I did
-and want to share some thoughts about it.
+This is yet another post about "how I reworked my blog stack", but I find it cool what I did and want to share some thoughts about it.
 
-It was supposed to be a longer article about how frameworks in 2022(2023) don't really give much value
-to a developer, but this blog post is still in drafts, and since I don't know when I will finish it, here's a shorter version.
+It was supposed to be a longer article about how frameworks in 2022(2023) don't really give much value to a developer, but this blog post is still in drafts, and since I don't know when I will finish it, here's a shorter version.
 
 ### No JS framework, no JS on the client
 
@@ -32,8 +30,7 @@ Getting out of Gatsby I wanted to do the smallest setup I can. The requirements 
 I use [showdownjs](https://www.npmjs.com/package/showdown) at work and since the main maintainer
 is back with us after fighting the pandemic in his main job (as a doctor) the choice was easy.
 
-I did some attempts a few times with different parsers but all of them are either very modular (lots of configs required)
-or feel like made for something else (that one that NetlifyCMS is using).
+I did some attempts a few times with different parsers but all of them are either very modular (lots of configs required) or feel like made for something else (that one that NetlifyCMS is using).
 
 Showdown is easy to use, you pass markdown it gives you html. All with github flavour which feels natural to me.
 
@@ -50,8 +47,7 @@ But how do I use React without transpiling?
 
 After a quick google I found the answer. I can transpile during the runtime while importing stuff!
 
-Well it's not really matching my criteria (still running transpiled code), but with [@swc/register](https://www.npmjs.com/package/swc-register)
-I can at least do it in the most seamless way.
+Well it's not really matching my criteria (still running transpiled code), but with [@swc/register](https://www.npmjs.com/package/swc-register) I can at least do it in the most seamless way.
 
 I write some code, I register `swc` while spinning up node (`node -r @swc/register scripts/index.js`) and it does everything during the runtime.
 
@@ -88,18 +84,14 @@ Not to mention the time I spent before on trying to upgrade Gatsby (which didn't
 
 ## Do I recommend this way?
 
-Yes. In that article that I may never finish I will explain why I think frameworks these days are
-getting irrelevant in favor of smart bundlers and native nodejs / Web API features.
+Yes. In that article that I may never finish I will explain why I think frameworks these days are getting irrelevant in favor of smart bundlers and native nodejs / Web API features.
 
-I started doing similar at work where our apps and frameworks (that we make ourselves) are much more
-complex. We pick dependencies that fill the gaps between what we want to do and what is available
-natively in nodejs or Web API. They should do one thing, be unopinionated and enable us instead of
-restricting us in **how** we want to approach things.
+I started doing similar at work where our apps and frameworks (that we make ourselves) are much more  complex. We pick dependencies that fill the gaps between what we want to do and what is available
+natively in nodejs or Web API. They should do one thing, be unopinionated and enable us instead of restricting us in **how** we want to approach things.
 
 ## No more frameworks?
 
-Of course I'm not saying everyone should do as we do. I'm sure there are teams and setups where
-frameworks give something that might be most valuable: well known conventions.
+Of course, I'm not saying everyone should do as we do. I'm sure there are teams and setups where frameworks give something that might be most valuable: well known conventions.
 
 And this is fine, pick the tools that suits you. Never listen blindly to people on the internet.
 
