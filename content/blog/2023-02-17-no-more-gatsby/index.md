@@ -16,7 +16,7 @@ This is yet another post about "how I reworked my blog stack", but I find it coo
 and want to share some thoughts about it.
 
 It was supposed to be a longer article about how frameworks in 2022(2023) don't really give much value
-to a developer, but this blog post is still in drafts and since I don't know when I will finish it, here's a shorter version.
+to a developer, but this blog post is still in drafts, and since I don't know when I will finish it, here's a shorter version.
 
 ### No JS framework, no JS on the client
 
@@ -32,7 +32,7 @@ Getting out of Gatsby I wanted to do the smallest setup I can. The requirements 
 I use [showdownjs](https://www.npmjs.com/package/showdown) at work and since the main maintainer
 is back with us after fighting the pandemic in his main job (as a doctor) the choice was easy.
 
-I did some attempts a few times with different parsers but all of them are either very modular (lots of config required)
+I did some attempts a few times with different parsers but all of them are either very modular (lots of configs required)
 or feel like made for something else (that one that NetlifyCMS is using).
 
 Showdown is easy to use, you pass markdown it gives you html. All with github flavour which feels natural to me.
@@ -48,10 +48,10 @@ Now the second problem. I don't like transpiling my code. I like to know exactly
 
 But how do I use React without transpiling?
 
-After quick google I found the answer. I can transpile during the runtime while importing stuff!
+After a quick google I found the answer. I can transpile during the runtime while importing stuff!
 
-Well it's not really matching my criteria (still running traspiled code), but with [@swc/register](https://www.npmjs.com/package/swc-register)
-I can at least do it in most seamless way.
+Well it's not really matching my criteria (still running transpiled code), but with [@swc/register](https://www.npmjs.com/package/swc-register)
+I can at least do it in the most seamless way.
 
 I write some code, I register `swc` while spinning up node (`node -r @swc/register scripts/index.js`) and it does everything during the runtime.
 
@@ -68,7 +68,7 @@ So I got the build script that does more or less this
 5. Run `renderToString`
 6. Put this all to .pug template (just one file!) so I don't have to deal with <head> in React
 7. Save to html in folder named as the `slug` meta
-8. Once all blogpost are set, get excerpts from them and do simialr with homepage.
+8. Once all blogpost are set, get excerpts from them and do similar with the homepage.
 9. Tell CloudFlare to deploy
 
 ### CSS!
