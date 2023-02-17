@@ -62,7 +62,7 @@ const Layout = ({ isRoot, children }) => {
                 <a href="https://agentslug.com">AgentSlug.com</a>.
               </p>
               <p>
-                It has some free tier, and premium trial account. Check this out!
+                It has no free tier but is cheap and has a trial with no credit card. Check this out!
               </p>
             </div>
           </div>
