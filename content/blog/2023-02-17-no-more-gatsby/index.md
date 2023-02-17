@@ -70,7 +70,7 @@ So I got the build script that does more or less this
 
 I like writing SASS, so I put parceljs next to it. Parcel is nice because like showdownjs it does what I need (and more) with no or little configuration. `parcel style.scss` would install SASS (if not there), compile the file to css and save it to /dist folder.
 
-I don't have to tell anything to this bundler, it detects stuff on it's own. Which sometimes can be annoying but in most cases it just works™.
+I don't have to tell anything to this bundler, it detects stuff on its own. Which sometimes can be annoying but in most cases it just works™.
 
 ## Is it fast now?
 
