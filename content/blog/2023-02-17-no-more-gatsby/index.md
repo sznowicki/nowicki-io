@@ -27,13 +27,13 @@ Getting out of Gatsby I wanted to do the smallest setup I can. The requirements 
 
 ### Markdown to HTML
 
-I use [showdownjs](https://www.npmjs.com/package/showdown) at work and since the main maintainer is back with us after fighting the pandemic in his main job (as a doctor) the choice was easy.
+I use [showdownjs](https://www.npmjs.com/package/showdown) at work, and since the main maintainer is back with us after fighting the pandemic in his main job (as a doctor) the choice was easy.
 
 I did some attempts a few times with different parsers but all of them are either very modular (lots of configs required) or feel like made for something else (that one that NetlifyCMS is using).
 
-Showdown is easy to use, you pass markdown it gives you html. All with github flavour which feels natural to me.
+Showdown is easy to use, you pass markdown, it gives you html. All with GitHub flavour which feels natural to me.
 
-Even markdown headers (check md files in this blog repo) are built-in which.
+Even markdown headers (check md files in this blog repo) are built-in which is amazing.
 
 The greatest package for me.
 
@@ -68,7 +68,7 @@ So I got the build script that does more or less this
 
 ### CSS!
 
-I like writing SASS so I put parceljs next to it. Parcel is nice because like showdownjs it does what I need (and more) with no or little configuration. `parcel style.scss` would install SASS (if not there), compile the file to css and save it to /dist folder.
+I like writing SASS, so I put parceljs next to it. Parcel is nice because like showdownjs it does what I need (and more) with no or little configuration. `parcel style.scss` would install SASS (if not there), compile the file to css and save it to /dist folder.
 
 I don't have to tell anything to this bundler, it detects stuff on it's own. Which sometimes can be annoying but in most cases it just works™.
 
