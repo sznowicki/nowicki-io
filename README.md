@@ -18,6 +18,6 @@ This work is licensed under a
 
 ## License disclaimer
 
-You are free to fork it, copy it, use it, modify it as long as you attribute it to my repository or twitter handle (sz_nowicki).
+You are free to fork it, copy it, use it, modify it as long as you attribute it to my repository or mastodon link (https://social.nowicki.io/@hey).
 
 Usually I license my code on permissive licenses but this is personal website and I don't want people to carbon copy it and use it as their own.
