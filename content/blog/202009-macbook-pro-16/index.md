@@ -3,8 +3,8 @@ author: sznowicki
 comments: true
 date: 2020-09-07 20:15:54+00:00
 slug: macbook-pro-16-64g-i9-vs-16g-i7-for-heavy-webdev
-title: MacBook Pro 16" - 64G i9 vs 16G i7 for heavy webdev
-excerpt: Hands-on comparison between MBP 16" - the base and top models. How they perform in programming activities? Is 16GB RAM enough?
+title: MacBook Pro 16 - 64G i9 vs 16G i7 for heavy webdev
+excerpt: Hands-on comparison between MBP 16 - the base and top models. How they perform in programming activities? Is 16GB RAM enough?
 categories: [Hardware]
 tags: [MacBook, MBP 16]
 ---
