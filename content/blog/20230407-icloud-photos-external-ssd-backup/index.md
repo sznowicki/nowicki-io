@@ -10,9 +10,9 @@ categories: [Hacking]
 tags: [Hacks, Apple, iCloud]
 ---
 
-# iCloud Photos backup on external SSD (in a nice way)
+## The nice way
 
-## Why other tutorials suck
+### Why other tutorials suck
 
 There are plenty of tutorials online on how to backup your iCloud Photos on an external drive while you have not enough space on your main device.
 
@@ -27,7 +27,7 @@ The requirements are:
 - you have big iCloud Photos library
 - you can't keep all "originals" on any of your macbooks (if you can, just continue doing it and for backup you can just copy the library to your SSD or wherever you want to keep it)
 
-## The way to do it nice
+### The way to do it nice
 
 So the steps are following:
 
