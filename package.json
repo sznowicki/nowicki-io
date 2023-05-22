@@ -20,7 +20,7 @@
     "not kaios > 0"
   ],
   "dependencies": {
-    "@fontsource/raleway": "^4.5.12",
+    "@fontsource/raleway": "^5.0.0",
     "@fontsource/vollkorn": "^4.5.14",
     "@fontsource/vollkorn-sc": "^4.5.11",
     "feed": "^4.2.2",
