@@ -57,10 +57,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-4.5.11.tgz#fe13da2844ea4ba87bb15ce4dad7597e3249a31a"
   integrity sha512-Xj4lCSxTg5tjzwKVD891zS4jPLegdiOYPEJwqugulCwq3uhm9BKu1xLxDPmKvLTIUf/XpJZoMC2LgGw1MaQrGw==
 
-"@fontsource/vollkorn@^4.5.14":
-  version "4.5.14"
-  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-4.5.14.tgz#a7d097fda43b1423d732ed23e9ad9a3600cbaeab"
-  integrity sha512-pzHiWJx0Pki6k9O4C707KRcrptqGwAzumArvk9ku8a5H5Z4aecDdshcalNLCou2A81hyCjSiAyFUH4MUpacAvA==
+"@fontsource/vollkorn@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-5.0.3.tgz#4df5f6c83721302fb36c2f23817a9e351b1be195"
+  integrity sha512-Krcz7gdgDVi4MRG8QriJbhsq3sb3Fl8WFQ8qd6qHiP+r09xdvozbqET67LJ9u2zVeWJ2hb45Adci4n7MQq5OXA==
 
 "@jridgewell/gen-mapping@^0.3.0":
   version "0.3.2"
