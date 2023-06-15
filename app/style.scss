@@ -3,25 +3,25 @@
 @use "npm:@fontsource/vollkorn-sc/scss/mixins" as VollkornSC;
 
 
-@include Raleway.fontFace(
-  $weight: 500,
-  $fontName: Raleway,
+@include Raleway.faces(
+  $weights: 500,
+  $family: Raleway,
   $display: block,
-  $fontDir: "npm:@fontsource/raleway/files"
+  $directory: "npm:@fontsource/raleway/files"
 );
 
-@include Vollkorn.fontFace(
-  $weight: 600,
-  $fontName: Vollkorn,
+@include Vollkorn.faces(
+  $weights: 600,
+  $family: Vollkorn,
   $display: fallback,
-  $fontDir: "npm:@fontsource/vollkorn/files"
+  $directory: "npm:@fontsource/vollkorn/files"
 );
 
-@include VollkornSC.fontFace(
-  $weight: 600,
-  $fontName: Vollkorn SC,
+@include VollkornSC.faces(
+  $weights: 600,
+  $family: 'Vollkorn SC',
   $display: fallback,
-  $fontDir: "npm:@fontsource/vollkorn-sc/files"
+  $directory: "npm:@fontsource/vollkorn-sc/files"
 );
 
 
