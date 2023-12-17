@@ -2,16 +2,13 @@
 author: sznowicki
 date: 2023-12-16 18:43:36+00:00
 slug: kukei-eu-search-engine
-title: Kukei.eu - a curated search engine for web developers
+title: Kukei.eu
 layout: post
 link: https://nowicki.io/kukei-eu-search-engine
 excerpt: Notes about how I started a new project - a curated search engine for web developers. How it started and how it's going...
 categories: [Hacking, Development]
 tags: [Development, kukei]
 ---
-
-
-# Kukei.eu
 
 Notes about how I started a new project - a curated search engine for web developers. How it started and how it's going...
 
