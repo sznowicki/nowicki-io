@@ -57,7 +57,7 @@ SEO spam now, so people will find it:
 
 Cloudflare Pages are cool because all the CI/CD is superfast, you get caching and geo-distribution out of the box, and Functions can do quote a lot. Localdev with Wrangler is meh, but works so also fine.
 
-#### Backend
+### Backend
 
 Now the hard part. How do I actually index stuff and make the search work.
 
@@ -77,7 +77,7 @@ Once the sources grow, it starts showing some edge cases. Maybe crawling entire 
 
 With that in mind at the moment of writing there are two crawlers: roots and continuous.
 
-Roots crawler checks all the sources initial entry pages, checks if there are new links, if there are some then it adds it to Mongo DB (on free tier Atlat, works as a meta db) as crawl subjects.
+Roots crawler checks all the sources initial entry pages, checks if there are new links, if there are some then it adds it to Mongo DB (free tier Atlas, works as a meta db) as crawl subjects.
 
 In the future this roots crawler will actually check n-level deep from the initial entry page to search updated contents. There will also be a process to update content and find 404s but this is for later. At this state content is fresh, no need to repair anything.
 
@@ -97,9 +97,11 @@ Here I have to say that it all went rather smooth because I had some experience 
 
 ## Design
 
-The main thesis in this project is that independent, small blogs, are underrepresented in major search website. That content is fair and true and it looses with SEO spam websites competition.
+The main thesis of the project is that independent, small blogs, are underrepresented in major search websites.
 
-This is why the _curated_ is the key here. But also I noticed in the beginning few things:
+Content that is fair and true looses the race with SEO spam websites competition.
+
+This is why the _curated search index_ is the key.
 
 ### Blogs are blogs
 
@@ -113,7 +115,7 @@ With no pagination there is a need to be creative.
 
 So the answer to this is that everyone has their own index. Docs are in docs index, blogs in blogs, big outlets in magazines.
 
-This way every query in kukei.eu has grouped results page. First docs (bet is that you are looking for docs), then blogs (deep dives, stories related to your search, maybe some innovative thoughts), then magazines (same as blogs, but hey, we're promoting small ones here).
+This way every query in kukei.eu has grouped results page. First docs (bet is that you are looking for docs), then blogs (deep dives, stories related to your search, maybe some innovative thoughts), then magazines.
 
 I strongly believe this is a good way to go. During working on this project I found so many great content in my index that probably doesn't have enough attention that is unbelievable.
 
@@ -121,12 +123,11 @@ I strongly believe this is a good way to go. During working on this project I fo
 
 Another thing I noticed is that for some queries, there are like 8 results from same blog and maybe 1 from another.
 
-Which is cool, maybe someone is really into P3 colors and ochl CSS colors but it makes the results seem weird.
+Which is cool, maybe someone is really into P3 and ochl CSS colors, but it makes the results seem poor.
 
-To solve this I decided to group the results per hostname. So if this happens you get 5 results from example.com, but only see the first oneby default (first one is also the most relevant one according to Meilisearch). The rest is hidden behind a "see more from this website" checkbox.
+To solve this I decided to group the results per hostname. So if this happens you get 5 results from example.com, but only see the first one by default (first one is also the most relevant one according to Meilisearch). The rest is hidden behind a "see more from this website" checkbox.
 
 So far it does the job, even beyond the blogs index.
-
 
 ## Future
 
