@@ -68,4 +68,6 @@ For 0,26 EUR per kWh it's not that much, 4¢ is about a cost of a single Hetzner
 
 If it works fine with kukei.eu I think I'll also move my Mastodon instance there. Then I'm fully "self-hosted".
 
-One day I maybe will also get ipv6 so then I can reduce the latency by replacing the Tunnel with a normal CF DNS proxy.
+For static websites, like kukei.eu frontend, this blog and others I have no intention of moving out of CloudFlare Pages since the whole package there is perfect (CI/CD, edge network, no-cost).
+
+One day I maybe will also get ipv6, so then I can reduce the latency by replacing the Tunnel with a normal CF DNS proxy.
