@@ -5,7 +5,7 @@ slug: self-hosting-lvm-raid1-with-key-over-ftp
 title: LVM RAID1, LUKS, encrypted with key over FTP
 layout: post
 link: https://nowicki.io/self-hosting-lvm-raid1-with-key-over-ftp
-excerpt: I managed to set up a server that hosts real stuff and sits in my living room. Here's how I did it.
+excerpt: Ubuntu server with two SSD RAID1 array, LUKS encrypted with keyscript taking key over curl ftp/http.
 categories: [DevOps, Development, Hacking]
 tags: [devops, development, hacking, selfhosting, self-hosting]
 ---
