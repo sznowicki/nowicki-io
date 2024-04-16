@@ -48,20 +48,20 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@fontsource/raleway@^5.0.3":
-  version "5.0.16"
-  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-5.0.16.tgz#0ec89d60c0fef790ecaf0dd93c255766a6df3dd7"
-  integrity sha512-+VNqahWDG31fL4TyeShCfCu5HWyid/Pm2wXH75rjFjJeqWergmkPUAqUzBXjaMIcYqWmFkI6KYzDKWpe2VZiaA==
+"@fontsource/raleway@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-5.0.17.tgz#5d894d5e385bfbce9a7c6e2a27e53d84c24a785f"
+  integrity sha512-JQ86C+y7jSnaxKaqhYX5i6suc7IgUvAkVnP+Z7iWvtrZRl94nXzUU89E84eMq6tCOmbBin/uvtAGfgdJGskT1A==
 
-"@fontsource/vollkorn-sc@^5.0.3":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-5.0.8.tgz#6207c5533f8a6db43698b97a5c8f134e635aabeb"
-  integrity sha512-j9Nxf3yv7cwhPqmjNildF0XrqgH9sLr3R3+3stF3SPkfpPO3S/euucR7oxqraPJsXzZbfjWYcTlW9zWdzPv0EA==
+"@fontsource/vollkorn-sc@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-5.0.12.tgz#8ffa9b9f4950678c4dbcea0737a80a53f16f8136"
+  integrity sha512-UrpEIkQm2L9yaXk/E6On8dm7b81nJPU4/GfqfYq2sOZZeSmzr+CQXzU/z6k6f/WPKPy3Nob50vZGG3/fovwlHA==
 
-"@fontsource/vollkorn@^5.0.3":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-5.0.18.tgz#368677b2118b5d4bab3c4066e54999ec1816364d"
-  integrity sha512-jdZL0LnKtkHHTDo5YKJ3yiS4XhCuE1EO9IrRJbf/5N07Y3lbDATuaXj6erg8DQltqLhqrb5TTfxYpno2MKpddQ==
+"@fontsource/vollkorn@^5.0.19":
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn/-/vollkorn-5.0.19.tgz#2c91b1b4cc9ab7d7da1781708a7867616b46d8c4"
+  integrity sha512-Wh72GEg5oqR5tiLDtgzs3RoFRHFdGiCWuTpf+p6cDw9P84CWSYucH59XJ2VCWtoSwtgl1FugnT1bkp8eVcSMYw==
 
 "@lezer/common@^1.0.0":
   version "1.1.2"
@@ -2281,10 +2281,10 @@ sass@^1.38.0:
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
-sass@^1.70.0:
-  version "1.70.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.70.0.tgz#761197419d97b5358cb25f9dd38c176a8a270a75"
-  integrity sha512-uUxNQ3zAHeAx5nRFskBnrWzDUJrrvpCPD5FNAoRvTi0WwremlheES3tg+56PaVtCs5QDRX5CBLxxKMDJMEa1WQ==
+sass@^1.75.0:
+  version "1.75.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.75.0.tgz#91bbe87fb02dfcc34e052ddd6ab80f60d392be6c"
+  integrity sha512-ShMYi3WkrDWxExyxSZPst4/okE9ts46xZmJDSawJQrnte7M1V9fScVB+uNXOVKRBt0PggHOwoZcn8mYX4trnBw==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
