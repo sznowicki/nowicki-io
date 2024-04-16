@@ -19,7 +19,7 @@ const BlogIndex = ({ pages }) => {
         <h1>
           <a href="/">Hello</a>
         </h1>
-        <p>I’m Szymon, Polish living in Germany since 2015.</p>
+        <p>I’m Szymon, a Polish person living in Germany since 2015.</p>
         <p>
           My first name translates to Simon, but I prefer{' '}
           <ExternalLink href="https://pl.forvo.com/word/szymon/#pl">
