@@ -2,7 +2,6 @@
 @use "npm:@fontsource/vollkorn/scss/mixins" as Vollkorn;
 @use "npm:@fontsource/vollkorn-sc/scss/mixins" as VollkornSC;
 
-
 @include Raleway.faces(
   $weights: 500,
   $family: Raleway,
