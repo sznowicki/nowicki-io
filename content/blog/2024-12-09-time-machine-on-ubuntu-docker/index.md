@@ -1,3 +1,16 @@
+---
+author: sznowicki
+date: 2024-12-09 19:19:36+00:00
+slug: time-machine-on-ubuntu-docker
+title: Time Machine on my home server
+layout: post
+link: https://nowicki.io/time-machine-on-ubuntu-docker
+excerpt: Self hosted linux and time machine backups over samba (docker)
+categories: [DevOps, Hacking]
+tags: [devops, development, selfhosting, self-hosting]
+---
+
+
 # Time Machine on my home server
 
 This will be a short post since I don't have much to say except aggregating some links.
