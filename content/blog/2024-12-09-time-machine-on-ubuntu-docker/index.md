@@ -10,9 +10,6 @@ categories: [DevOps, Hacking]
 tags: [devops, development, selfhosting, self-hosting]
 ---
 
-
-# Time Machine on my home server
-
 This will be a short post since I don't have much to say except aggregating some links.
 
 ## Self hosted linux and time machine backups over samba (docker)
