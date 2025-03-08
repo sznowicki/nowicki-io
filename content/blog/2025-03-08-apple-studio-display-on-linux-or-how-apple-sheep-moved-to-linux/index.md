@@ -12,6 +12,8 @@ tags: [Linux, Desktop, Apple Studio Display, Ubunut, Hacking]
 
 There are times in a life of a tinkerer where things escalate rapidly, in a roller-coaster way, with a roller-coaster final station - relief.
 
+[for tl;dr, click here](#apple-studio-display-on-ubuntu---all-you-need-to-know)
+
 ## I want some challenge, so I'll make one myself
 
 I don't remember why exactly, I think it was a need to make my ollama instance run little faster,
