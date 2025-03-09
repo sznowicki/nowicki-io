@@ -48,7 +48,7 @@ I ended up with this setup:
 
 This was nice, but since I already installed Ubuntu Desktop, I wanted more.
 
-### Ubuntu setup or an Apple-fan
+### Ubuntu setup for an Apple-fan
 
 So I bought a stupid Full HD screen, mounted it with a VESA arm on my desk, and started using it as an extra desktop next to my normal
 Macbook Pro work setup.
@@ -115,6 +115,8 @@ That was when I flipped and just bought a new PC. Good bye, proprietary aftermar
 With new Ryzen CPU, Asus motherboard, PSU and case I started the assembly line and surprisingly, after moving all storage disks to that new PC... Ubuntu booted like nothing happened.
 
 All encryption worked, all docker containers started. Didn't have to move my finger to make my server up and running again.
+
+![New PC case](./IMG_8269.jpeg)
 
 But Apple Studio Display is still black...
 
@@ -264,3 +266,7 @@ Just look how clean and minimalistic it is while offering almost same easy-to-us
 ![Ubuntu with GNOME mountain background](./ubuntu-my-current-setup.png)
 
 Since I have all I need for iCloud integration, I think I'll use this setup as my main driver now. Especially given that it was pretty cheap, powerful and I can upgrade it any time.
+
+And this view of motherboard with components it's a cool thing on it's own.
+
+![Motherboard with components](./IMG_8270.jpeg)
