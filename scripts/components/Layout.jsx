@@ -49,20 +49,20 @@ const Layout = ({ isRoot, children }) => {
             <h2>One more thing</h2>
             <div className="footer-content__text">
               <p>
-                If you're interested in
+                I do some small web apps that you may like:
                 {' '}
-                <a href="https://agentslug.com">monitoring your website uptime</a>
+                <a href="https://kukei.eu">kukei.eu - search engine for web devs</a>
                 {' '}
-                or
+                ,
                 {' '}
-                <a href="https://agentslug.com">monitoring your application/server</a>
+                <a href="https://masto.kukei.eu">masto.kukei.eu - real-time mastodon search</a>
                 {' '}
-                then I recommend a great service, which I run as an indie dev for many years:
+                and
                 {' '}
-                <a href="https://agentslug.com">AgentSlug.com</a>.
+                <a href="https://kapus.app">kapus.app - universal, encrypted clipboard</a>.
               </p>
               <p>
-                It has no free tier but is cheap and has a trial with no credit card. Check this out!
+                If you like my work and you enjoyed my posts, you can <a href={"https://buymeacoffee.com/nowicki"}>buy me a coffee</a>.
               </p>
             </div>
           </div>
