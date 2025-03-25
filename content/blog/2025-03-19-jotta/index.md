@@ -28,7 +28,7 @@ No API, no third-party apps, no support outside the walled garden.
 
 This was still fine as long as I only used that toy-Android-secondary-device.
 
-Now when I get a proper [Linux desktop](./apple-studio-display-on-linux-or-how-apple-sheep-moved-to-linux) and I noticed I don't use macbook that much anymore, I started looking around what are my options.
+Now when I get a proper [Linux desktop](/apple-studio-display-on-linux-or-how-apple-sheep-moved-to-linux) and I noticed I don't use macbook that much anymore, I started looking around what are my options.
 
 Yes, there's rclone with iCloud drive support. That kinda works (although buggy). But, for Photos there's literally hard, strict lockdown.
 
