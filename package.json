@@ -30,7 +30,7 @@
     "pug": "^3.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.77.6",
+    "sass": "^1.86.3",
     "showdown": "^2.1.0",
     "showdown-highlight": "^3.1.0"
   },
