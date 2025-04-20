@@ -62,7 +62,7 @@ const Layout = ({ isRoot, children }) => {
                 <a href="https://kapus.app">kapus.app - universal, encrypted clipboard</a>.
               </p>
               <p>
-                If you like my work and you enjoyed my posts, you can <a href={"https://buymeacoffee.com/nowicki"}>buy me a coffee</a>
+                If you like my work and you enjoyed my posts, you can <a href={"https://buymeacoffee.com/nowicki"} target="_blank">buy me a coffee</a>
                 {' '}
                 or <a href="https://coindrop.to/sznowicki" target="_blank">drop me a coin</a>
                 .
