@@ -1,4 +1,4 @@
-—-
+---
 author: sznowicki
 date: 2025-05-26 19:19:36+00:00
 slug: nothing-phone-3a-and-android
@@ -8,7 +8,7 @@ link: https://nowicki.io/nothing-phone-3a-and-android
 excerpt: After over 12 years with an iPhone, I might have just switched to Android.
 categories: [lifestyle, android, iOS]
 tags: []
-—-
+---
 
 ## It’s Nothing
 

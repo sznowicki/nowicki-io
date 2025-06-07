@@ -35,12 +35,12 @@
     "showdown-highlight": "^3.1.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.12.0",
+    "@parcel/transformer-sass": "2.15.2",
     "@swc/core": "^1.6.5",
     "@swc/register": "^0.1.10",
     "http-server": "^14.1.1",
     "nodemon": "^3.1.4",
-    "parcel": "^2.12.0"
+    "parcel": "^2.15.2"
   },
   "license": "0BSD"
 }
