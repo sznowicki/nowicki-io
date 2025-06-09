@@ -31,10 +31,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-5.2.5.tgz#4216a736650069e39398f7d8d67d91a9ac898cc6"
   integrity sha512-gVFV8Yi8Y5h8sQw0U/F6TQID53DVIWPuRxqBLOBxwLbQma42JAwqTZ+pi3eDjpm20/rjS2XoVJH5hnMx1KFB+g==
 
-"@fontsource/vollkorn-sc@^5.0.13":
-  version "5.2.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-5.2.5.tgz#72e6ac991e4948e3d185537ce116fd7d90fd567c"
-  integrity sha512-6gdZFETtgLWH8KRcIBiOk2eLi7Tie/33gTWR6ecRu9oHVENditE5XjVKJupUg1FdPLObw+9d7t7Lq3Qxu5l/Rw==
+"@fontsource/vollkorn-sc@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/vollkorn-sc/-/vollkorn-sc-5.2.6.tgz#eecbc133af98a87cde82c8ba525dc0a1db0b9008"
+  integrity sha512-3W6CaM/QTponAldEYmlOPOu5u5sXuT1UTUV6aqj8Mvs0tuwh+1jrGslGLRdxhU5/YVMf4yUK1ZcRYGKbH7l1/g==
 
 "@fontsource/vollkorn@^5.0.20":
   version "5.2.8"
