@@ -253,7 +253,9 @@ I don't know why, but my Ryzen CPU claims they only support displays up to 4K vi
 
 #### Apple Studio Display brightness control on linux
 
-That's easy, with that special USB/DB->USB cable you can just build [this project](https://github.com/juliuszint/asdbctl) and carry on. It just works.
+That's easy, with that special USB/DB->USB cable you can just build [asdcontrol](https://github.com/nikosdion/asdcontrol) or [asdbctl](https://github.com/juliuszint/asdbctl) and carry on. It just works.
+
+Update: later I've also made [asdcontrol Gnome GUI](https://github.com/sznowicki/asdcontrol-gnome)
 
 ## Overall feeling
 
