@@ -257,6 +257,8 @@ That's easy, with that special USB/DB->USB cable you can just build [asdcontrol]
 
 Update: later I've also made [asdcontrol Gnome GUI](https://github.com/sznowicki/asdcontrol-gnome)
 
+Update 2 (26-10-2025): Since original asdcontrol is archived by the author, now asdcontrol-gnome is a standalone application thx to another the [power of FOSS](https://github.com/sznowicki/asdcontrol-gnome/pull/2).
+
 ## Overall feeling
 
 I am absolutely amazed how Ubuntu with GNOME is nicely designed and offers really well-executed UX for a person who comes from Apple.
