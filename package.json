@@ -21,26 +21,26 @@
     "not and_qq > 0"
   ],
   "dependencies": {
-    "@fontsource/raleway": "^5.0.19",
-    "@fontsource/vollkorn": "^5.0.20",
-    "@fontsource/vollkorn-sc": "^5.0.13",
-    "feed": "^4.2.2",
-    "fs-extra": "^11.1.1",
+    "@fontsource/raleway": "^5.2.8",
+    "@fontsource/vollkorn": "^5.2.10",
+    "@fontsource/vollkorn-sc": "^5.2.8",
+    "feed": "^5.1.0",
+    "fs-extra": "^11.3.2",
     "highlight.js": "^11.8.0",
     "pug": "^3.0.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sass": "^1.77.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sass": "^1.94.2",
     "showdown": "^2.1.0",
     "showdown-highlight": "^3.1.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.15.2",
-    "@swc/core": "^1.6.5",
+    "@parcel/transformer-sass": "2.16.1",
+    "@swc/core": "^1.15.3",
     "@swc/register": "^0.1.10",
     "http-server": "^14.1.1",
-    "nodemon": "^3.1.4",
-    "parcel": "^2.15.2"
+    "nodemon": "^3.1.11",
+    "parcel": "^2.16.1"
   },
   "license": "0BSD"
 }
