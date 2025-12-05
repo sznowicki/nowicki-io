@@ -28,8 +28,8 @@
     "fs-extra": "^11.3.2",
     "highlight.js": "^11.8.0",
     "pug": "^3.0.3",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "sass": "^1.94.2",
     "showdown": "^2.1.0",
     "showdown-highlight": "^3.1.0"
