@@ -43,6 +43,14 @@ const makeStaticPages = async (pages) => {
     excerpt: webConfig.description,
   });
   writeFileSync(resolve(distFolder, './index.html'), index);
+
+  const contact = await makeDocument('contact', {}, {
+    title: 'Contact',
+    excerpt: '.',
+  });
+  ensureDirSync(resolve(distFolder, './contact'));
+  writeFileSync(resolve(distFolder, './contact/index.html'), contact);
+
   const page404 = await makeDocument('404', {}, {
     title: 'Not found!',
     excerpt: 'Page not found',
