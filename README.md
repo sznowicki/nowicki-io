@@ -1,3 +1,4 @@
+[Moved to Codeberg](https://codeberg.org/sznowicki/nowicki-io)
 # Hello
 
 This is a source code of my [personal website/blog](https://nowicki.io). It's built with [Gatsby](https://www.gatsbyjs.com)
